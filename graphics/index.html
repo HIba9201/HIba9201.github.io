@@ -109,7 +109,7 @@
     <div>
         <h2>Растровая графика</h2>
         <ul style="max-width: 80ch;">
-            <li>Растр — сетка фиксированного размера,каждая ячейка которой хранит информацию о цвете</li>
+            <li>Растр — сетка фиксированного размера, каждая ячейка которой хранит информацию о цвете</li>
         </ul>
         <p style="text-align: center; margin-top: 128px">
             <img src="pictures/01-images/disk-pixelated.png" width="512" alt="">
@@ -136,33 +136,26 @@
             <li>JPEG</li>
             <li>PNG</li>
             <li>WEBP</li>
-            <!-- <li>AVIF</li> -->
+            <li>AVIF</li>
             <li>HEIC</li>
             <li>GIF</li>
         </ul>
     </div>
 </section>
 
+
 <section class="slide" id="images-formats-jpeg">
     <div>
         <h2>JPEG</h2>
-        <ul style="max-width: 80ch;">
+        <ul style="max-width: 120ch;">
             <li>Наиболее популярный формат изображений</li>
             <li>По умолчанию является форматом со сжатием с потерями</li>
+            <li>Универсальная поддержка большим количеством браузеров</li>
+            <li>Отлично подходит для хранения любых изображений если нет необходимости сохранить их исходное качество</li>
         </ul>
         <p style="text-align: center; margin-top: 60px">
             <img src="pictures/01-images/jpegs-2.png" width="1280" alt="">
         </p>
-    </div>
-</section>
-
-<section class="slide" id="images-formats-jpeg-pros">
-    <div>
-        <h2>JPEG — Преимущества</h2>
-        <ul style="max-width: 80ch;">
-            <li>Универсальная поддержка большим количеством старых и новых устройств, а также всеми старыми и новыми браузерами</li>
-            <li>Отлично подходит для хранения фотографий и любых изображений в тех условиях, где нет необходимости сохранить исходное качество изображения</li>
-        </ul>
     </div>
 </section>
 
@@ -178,13 +171,14 @@
     </div>
 </section>
 
+
 <section class="slide" id="images-formats-png">
     <div>
         <h2>PNG</h2>
-        <ul style="max-width: 80ch;">
+        <ul style="max-width: 120ch;">
             <li>Популярный формат для передачи изображения без потерь</li>
             <li>Поддерживается всеми браузерами, в том числе сильно устаревшими</li>
-            <li>Имеет эффективные методы сжатия простой графики, из-за чего очень популярен для хранения в нем иконок, интерфейсных элементов или простой графики</li>
+            <li>Имеет эффективные методы сжатия простой графики</li>
             <li>Поддерживает прозрачность</li>
         </ul>
     </div>
@@ -193,22 +187,24 @@
 <section class="slide" id="images-formats-png-cons">
     <div>
         <h2>PNG — Недостатки</h2>
-        <ul style="max-width: 80ch;">
-            <li>Слишком тяжелый для хранения в нем фотографий (и любых изображений с большим количеством уникальных цветов)</li>
+        <ul style="max-width: 120ch;">
+            <li>Слишком тяжелый для хранения в нем изображений с большим количеством уникальных цветов</li>
             <li>Не умеет в анимацию (но существует APNG)</li>
         </ul>
     </div>
 </section>
 
+
 <section class="slide" id="images-formats-webp">
     <div>
         <h2>WebP</h2>
-        <ul style="max-width: 80ch;">
+        <ul style="max-width: 120ch;">
             <li>Современный формат активно приобретающий свою популярность. Разработан в Google.</li>
             <li>Поддерживается только современными браузерами</li>
             <li>Имеет современные методы сжатия, поэтому очень хорошо сжимается и мало весит</li>
             <li>Умеет в сжатие как с потерями, так и без потерь</li>
         </ul>
+
     </div>
 </section>
 
@@ -222,56 +218,82 @@
     </div>
 </section>
 
+<section class="slide full-image" id="images-formats-webp-supports">
+    <img src="pictures/caniuse/webp.png" alt="">
+</section>
+
+
 <section class="slide" id="images-formats-heif">
     <div>
         <h2>HEIF</h2>
-        <ul style="max-width: 80ch;">
-            <li>Еще один современный формат файлов для хранения отдельных изображений или их последовательностей (медиаконтейнер). Разработан MPEG.</li>
-            <li>Используется по умолчанию в современных iOS как формат по умолчанию для фотографий</li>
+        <ul style="max-width: 120ch;">
+            <li>Современный формат файлов для хранения отдельных изображений или их последовательностей (медиаконтейнер). Разработан MPEG.</li>
+            <li>Используется по умолчанию в современных iOS как формат для съемки фотографий</li>
         </ul>
     </div>
 </section>
 
-<section class="slide" id="images-formats-heif-cons">
+<section class="slide" id="images-formats-heif-support">
     <div>
-        <h2>HEIF — Недостатки</h2>
-        <ul style="max-width: 80ch;">
+        <h2>HEIF — Поддержка</h2>
+        <ul style="max-width: 120ch;">
             <li>Крайне плохая браузерная поддержка</li>
-            <li>О формате стоит знать для понимания почему фотографии, сделанные на iPhone, нельзя без конвертации показать в браузере</li>
-            <!-- TODO caniuse -->
+            <li>О формате стоит знать для понимания почему фотографии, сделанные на iPhone, нельзя показать в браузере без конвертации</li>
         </ul>
     </div>
 </section>
 
-<!-- TODO Avif -->
+<section class="slide full-image" id="images-formats-heif-supports">
+    <img src="pictures/caniuse/heif.png" alt="">
+</section>
+
+<!-- TODO & DISCUSS Avif -->
+<!-- Когда и для каких случаев используем -->
+
+
+<section class="slide" id="images-formats-avif">
+    <div>
+        <h2>AVIF</h2>
+        <ul style="max-width: 120ch;">
+            <li>Современный формат изображений, опубликован в феврале 2019 года</li>
+            <li>Показывает наилучшую эффективность по сравнению с конкурентами JPEG и HEIF</li>
+            <li>Неплохо поддерживается современными браузерами</li>
+        </ul>
+    </div>
+</section>
+
+<section class="slide" id="images-formats-avif-cons">
+    <div>
+        <h2>AVIF — Недостатки</h2>
+        <ul style="max-width: 120ch;">
+            <li>Возникают проблемы с цветопередачей мелких деталей</li>
+            <li>Также, как и WebP, требует хранения рядом альтернативных форматов</li>
+            <li>Не все графические редакторы умеют сохранять файлы в Avif</li>
+        </ul>
+    </div>
+</section>
+
 
 <section class="slide" id="images-formats-gif">
     <div>
         <h2>GIF (гифки)</h2>
         <ul style="max-width: 80ch;">
             <li>Устаревший, но всё еще популярный формат для анимированных изображений</li>
-            <li>Каждый кадр анимации хранит в себе как отдельное изображение</li>
-        </ul>
-    </div>
-</section>
-
-<section class="slide" id="images-formats-gif-pros">
-    <div>
-        <h2>GIF — Преимущества</h2>
-        <ul style="max-width: 80ch;">
             <li>Простой способ передать анимацию</li>
+            <li>Каждый кадр анимации хранит в себе как отдельное изображение</li>
             <li>Миллионы веселых картинок и анимаций, которые так популярны в месенджерах</li>
         </ul>
     </div>
 </section>
 
+
 <section class="slide" id="images-formats-gif-cons">
     <div>
         <h2>GIF — Недостатки</h2>
-        <ul style="max-width: 80ch;">
-            <li>Очень тяжелый (простая анимация может весить десятки мегабайт) (гиф-анимация может весить 8 Мб против 800 Кб аналогичного видео-файла)</li>
+        <ul style="max-width: 120ch;">
+            <li>Очень тяжелый (гиф-анимация может весить 8 Мб против 800 Кб аналогичного видео-файла)</li>
             <li>Отсутствие контроля анимации</li>
-            <li>Скудные (по современным меркам) возможности в цветопередачи (256 уникальных цветов на файл)</li>
+            <li>Скудные по современным меркам возможности цветопередачи (256 уникальных цветов на файл)</li>
             <li>Плохое качество изображений</li>
         </ul>
     </div>
@@ -280,10 +302,10 @@
 <section class="slide" id="images-formats-tips">
     <div>
         <h2>Практические советы</h2>
-        <ul style="max-width: 80ch;">
+        <ul style="max-width: 120ch;">
             <li>Для любых изображений в универсальных условиях — JPEG</li>
-            <li>Макеты, иконки, логотипы, графику, простые иллюстрации — PNG (или SVG для вектора)</li>
-            <li>WebP — как вспомогательный формат для современных браузеров в целях экономии трафика и ускорения загрузки</li>
+            <li>Макеты, иконки, логотипы, графика, простые иллюстрации — PNG для растра или SVG для вектора</li>
+            <li>WebP и Avif — как вспомогательные форматы для современных браузеров в целях экономии трафика и ускорения загрузки</li>
             <li>GIF — только для анимации в редких исключениях</li>
             <li>Не забывайте про оптимизацию</li>
         </ul>
@@ -301,10 +323,10 @@
 <section class="slide" id="svg-describe">
     <div>
         <h2>SVG</h2>
-        <ul style="max-width: 80ch;">
+        <ul style="max-width: 120ch;">
             <li><b>Scalable Vector Graphics</b> — язык разметки векторной графики, созданный W3C</li>
             <li>Предназначен для описания векторной и смешанной (векторно-растровой) двухмерной графики</li>
-            <li>Является человеко-читаемым XML-форматом</li>
+            <li>Является человеко-читаемым XML-форматом — можно написать руками</li>
             <li>Поддерживается любым браузером, (хотя иногда бывают нюансы и особенности, лучше уточнять поддержку браузерами)</li>
             <li>Поддерживает анимацию и интерактивность</li>
         </ul>
@@ -318,11 +340,9 @@
             <li>Масштабируется</li>
             <li>Четкий на ретине</li>
             <li>Можно вставлять тег-svg прямо в HTML</li>
-            <li>Существует возможность настраивать стили svg-элементов через CSS</li>
-            <li>Можно написать руками</li>
             <li>Переиспользуемые компоненты</li>
             <li>Доступен как DOM для CSS — существует возможность настраивать стили svg-элементов через CSS</li>
-            <li>...и для и JS — можно работать с svg через браузерный скрипт</li>
+            <li>...и для JS — можно работать с svg через браузерный скрипт</li>
         </ul>
     </div>
 </section>
@@ -489,6 +509,7 @@
 			<code>  &lt;image xlink:href="your-image.png" width="200" height="300" /></code>
 			<code>&lt;/mask></code>
 		</pre>
+
         <pre>
 			<code>mask: url(#mask);</code>
 		</pre>
@@ -500,21 +521,19 @@
     <div>
         <h2>Встраивание изображений в HTML</h2>
         <ul>
-            <li>Теги &lt;embed&gt;, &lt;object&gt;, &lt;iframe&gt;</li>
             <li>Теги &lt;img&gt;, &lt;picture&gt;</li>
+            <li>Теги &lt;embed&gt;, &lt;object&gt;, &lt;iframe&gt;</li>
             <li>Теги &lt;svg&gt;</li>
             <li>background-image: url() в CSS</li>
-            <li>dataURI</li>
-            <li>шрифт</li>
+            <li>Data URI</li>
         </ul>
     </div>
 </section>
 
-<!-- SUGGEST: Рассказать подробнее про встраивание изображений в HTML -->
 
-<!-- <section class="slide" id="images-integration">
+<section class="slide" id="images-integration-img">
     <div>
-        <h2>Тег img</h2>
+        <h2>Тег &lt;img&gt;</h2>
         <ul>
             <li>Универсальная возможность отрисовать изображение</li>
             <li>Поддерживается всеми браузерами</li>
@@ -522,8 +541,78 @@
             <li>Более современные браузеры поддерживают аттрибут srcset, через который можно указать серию различных версий изображения разных форматов и размеров</li>
             <li>Поддерживает как растровые форматы, так и векторные (svg) (но без возможности их стилизации)</li>
         </ul>
+
+        <pre class="html" style="margin-top: 80px;">
+            <code>&lt;img src="./image.png" width="640" height="480" id="hero" /&gt;</code>
+        </pre>
     </div>
-</section> -->
+</section>
+
+
+<section class="slide" id="images-integration-picture">
+    <div>
+        <h2>Тег &lt;picture&gt;</h2>
+        <ul>
+            <li>Альтернативный способ указать браузеру о разных версиях изображения разных размеров и форматов.</li>
+            <li>Требует перечисления в теле тега &lt;source&gt; и &lt;img&gt; тегов</li>
+        </ul>
+
+        <pre class="html" style="margin-top: 80px;">
+            <code>&lt;picture&gt;</code>
+            <code>  &lt;source srcset="320.jpg" media="(max-width: 800px)"&gt;</code>
+            <code>  &lt;img src="640.jpg" alt="Изображение"&gt;</code>
+            <code>&lt;/picture&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class="slide" id="images-integration-svg">
+    <div>
+        <h2>Тег &lt;svg&gt;</h2>
+        <ul>
+            <li>Тег для отрисовки svg-изображения прямо внутри html-документа</li>
+        </ul>
+
+        <pre class="html" style="margin-top: 80px;">
+            <code>&lt;svg width='44' height='44' fill='none' xmlns='http://www.w3.org/2000/svg'&gt;</code>
+            <code>  &lt;path d='M22 43a21 21 0 1 0 0-42 21 21 0 0 0 0 42Z' fill='#F8604A' /&gt;</code>
+            <code>  &lt;path d='M25.3 35.13h4.57V8.86h-6.66c-6.7 0-10.22...01Z' fill='#fff' /&gt;</code>
+            <code>&lt;/svg&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class="slide" id="images-integration-css-background">
+    <div>
+        <h2>CSS background-image</h2>
+        <ul style="max-width: 120ch;">
+            <li>С помощью css-свойства <strong>background-image</strong> можно указать ссылку на изображение для фона любого html-элемента</li>
+            <li>Такое изображение можно позиционировать с помощью css-свойств background-position, background-size и background-repeat</li>
+            <li>Изображение вставленное через background-image недоступно пользователю для прямого копирования из интерфейса браузера.</li>
+        </ul>
+
+        <pre class="css" style="margin-top: 80px;">
+            <code>.element {</code>
+            <code>  background-image: url("./image.jpg");</code>
+            <code>  background-size: contain;</code>
+            <code>  background-position: center;</code>
+            <code>  background-repeat: no-repeat;</code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class="slide" id="images-integration-css-datauri">
+    <div>
+        <h2>Data URI</h2>
+        <ul style="max-width: 120ch;">
+            <li>Позволяет закодировать изображение в текстовую строку и загрузить вместе со страницей/стилем/скриптом одним запросом</li>
+        </ul>
+        <pre style="margin-top: 80px;">
+            <code class="css" style="max-width: 80ch; white-space: pre-wrap; overflow-wrap: break-word;">background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='44' height='44' fill='none' x….54 0-2.79 1.97-4.68 5.72-4.68h2.05v22.7h.01Z' fill='%23fff'/%3E%3C/svg%3E");</code>
+        </pre>
+    </div>
+</section>
 
 
 <section class="slide cover seventh" id="images-tools">
@@ -560,13 +649,14 @@
         <h2>Оптимизаторы</h2>
         <ul>
             <li>Инструменты, которые позволяют оптимизировать изображения и уменьшать их размер (с потерей или без потери качества)</li>
-            <li>https://imageoptim.com/ — отличный оптимизатор для Mac</li>
-            <li>https://squoosh.app/ – онлайн-инструмент для растровых изображений</li>
-            <li>https://jakearchibald.github.io/svgomg/ – онлайн-инструмент для работы с svg</li>
-            <li>https://github.com/svg/svgo/ – консольная утилита для svg</li>
+            <li><a class="--extra-link" href="https://imageoptim.com/" target="_blank">https://imageoptim.com/</a> - отличный оптимизатор для Mac</li>
+            <li><a class="--extra-link" href="https://squoosh.app/" target="_blank">https://squoosh.app/</a> - онлайн-инструмент для растровых изображений</li>
+            <li><a class="--extra-link" href="https://jakearchibald.github.io/svgomg/" target="_blank">https://jakearchibald.github.io/svgomg/</a> - онлайн-инструмент для работы с svg</li>
+            <li><a class="--extra-link" href="https://github.com/svg/svgo/" target="_blank">https://github.com/svg/svgo/</a> - консольная утилита для svg</li>
         </ul>
     </div>
 </section>
+
 
 <!--  -->
 
