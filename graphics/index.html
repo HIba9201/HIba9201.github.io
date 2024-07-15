@@ -101,6 +101,8 @@
             <li>Растровые</li>
             <li>Векторные</li>
         </ul>
+
+        <a class="extra-link" href="https://thecode.media/draw/" target="_blank">Растровая и векторная графика: это как? — Код</a>
     </div>
 </section>
 
@@ -247,17 +249,16 @@
     <img src="pictures/caniuse/heif.png" alt="">
 </section>
 
-<!-- TODO & DISCUSS Avif -->
-<!-- Когда и для каких случаев используем -->
-
 
 <section class="slide" id="images-formats-avif">
     <div>
         <h2>AVIF</h2>
         <ul style="max-width: 120ch;">
             <li>Современный формат изображений, опубликован в феврале 2019 года</li>
+            <li>Сжатие может быть как с потерями, и без потерь</li>
             <li>Показывает наилучшую эффективность по сравнению с конкурентами JPEG и HEIF</li>
             <li>Неплохо поддерживается современными браузерами</li>
+            <li>Поддерживает анимированные изображения</li>
         </ul>
     </div>
 </section>
@@ -271,6 +272,10 @@
             <li>Не все графические редакторы умеют сохранять файлы в Avif</li>
         </ul>
     </div>
+</section>
+
+<section class="slide full-image" id="images-formats-avif-supports">
+    <img src="pictures/caniuse/avif.png" alt="">
 </section>
 
 
@@ -330,6 +335,8 @@
             <li>Поддерживается любым браузером, (хотя иногда бывают нюансы и особенности, лучше уточнять поддержку браузерами)</li>
             <li>Поддерживает анимацию и интерактивность</li>
         </ul>
+
+        <a class="extra-link" href="https://doka.guide/html/svg/" target="_blank">&lt;svg&gt; — Дока</a>
     </div>
 </section>
 
@@ -559,7 +566,9 @@
 
         <pre class="html" style="margin-top: 80px;">
             <code>&lt;picture&gt;</code>
-            <code>  &lt;source srcset="320.jpg" media="(max-width: 800px)"&gt;</code>
+            <code>  &lt;source srcset="/image.webp" type="image/webp" /></code>
+            <code>  &lt;source srcset="/image.avif" type="image/avif" /></code>
+            <!-- <code>  &lt;source srcset="320.jpg" media="(max-width: 800px)"&gt;</code> -->
             <code>  &lt;img src="640.jpg" alt="Изображение"&gt;</code>
             <code>&lt;/picture&gt;</code>
         </pre>
