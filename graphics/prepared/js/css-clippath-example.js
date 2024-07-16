@@ -1,21 +1,24 @@
 const resizer = document.querySelector('#css-clipping-example #resizer');
 const curtain = document.querySelector('#css-clipping-example .foreground');
-let isDragging = false;
+const image = document.querySelector('#css-clipping-example .background');
 const maxWidth = curtain.clientWidth;
 let left = maxWidth;
 
 resizer.addEventListener('mousedown', (event) => {
-    isDragging = true;
-
-    console.log('down', event);
+    const imageRect = image.getBoundingClientRect();
+    const maxLeft = imageRect.x + imageRect.width + 20;
+    const minLeft = imageRect.x - 20;
 
     document.addEventListener('mousemove', mouseMoveHandler);
 
     document.addEventListener('mouseup', mouseUpHandler);
 
     function mouseMoveHandler(event) {
-        console.log('move', event);
         window.requestAnimationFrame(() => {
+            if (event.clientX > maxLeft || event.clientX < minLeft) {
+                return;
+            }
+
             left = Math.max(0, Math.min(left + event.movementX, maxWidth));
 
             resizer.style.left = `${left}px`;
@@ -25,9 +28,6 @@ resizer.addEventListener('mousedown', (event) => {
     }
 
     function mouseUpHandler(event) {
-        console.log('up');
-        isDragging = false;
-
         document.removeEventListener('mousemove', mouseMoveHandler);
         document.removeEventListener('mouseup', mouseUpHandler);
     }
