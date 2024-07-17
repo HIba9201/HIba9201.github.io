@@ -354,21 +354,6 @@
     </div>
 </section>
 
-
-<!-- <section class="slide" id="svg-insert">
-    <div>
-        <h2>Встраивание</h2>
-        <ul>
-            <li>&lt;embed&gt;, &lt;object&gt;, &lt;iframe&gt;</li>
-            <li>&lt;img&gt;</li>
-            <li>background-image: url()</li>
-            <li>dataURI</li>
-            <li>SVG в HTML</li>
-            <li>шрифт</li>
-        </ul>
-    </div>
-</section> -->
-
 <section class="slide" id="svg-drawing">
     <div>
         <h2>Рисование</h2>
@@ -488,38 +473,6 @@
             <li>T, t — smooth quadratic Bézier curveto</li>
             <li>A, a — elliptical arc</li>
         </ul>
-    </div>
-</section>
-
-<section class="slide" id="svg-clipping">
-    <div>
-        <h2>Обрезка</h2>
-        <pre>
-            <code class="html">&lt;clippath id="clip-star"></code>
-            <code class="html">  &lt;polygon points="98.499..." /></code>
-            <code class="html">&lt;/clippath></code>
-        </pre>
-
-        <pre>
-            <code class="css">clip-path: url(#clip-star);</code>
-        </pre>
-
-        <a class="extra-link" href="http://www.cssplant.com/clip-path-generator" target="_blank">Clip Path Generator</a>
-    </div>
-</section>
-
-<section class="slide" id="svg-masking">
-    <div>
-        <h2>Маски</h2>
-        <pre>
-			<code>&lt;mask id="mask"></code>
-			<code>  &lt;image xlink:href="your-image.png" width="200" height="300" /></code>
-			<code>&lt;/mask></code>
-		</pre>
-
-        <pre>
-			<code>mask: url(#mask);</code>
-		</pre>
     </div>
 </section>
 
@@ -658,10 +611,10 @@
         <h2>Оптимизаторы</h2>
         <ul>
             <li>Инструменты, которые позволяют оптимизировать изображения и уменьшать их размер (с потерей или без потери качества)</li>
-            <li><a class="--extra-link" href="https://imageoptim.com/" target="_blank">https://imageoptim.com/</a> - отличный оптимизатор для Mac</li>
-            <li><a class="--extra-link" href="https://squoosh.app/" target="_blank">https://squoosh.app/</a> - онлайн-инструмент для растровых изображений</li>
-            <li><a class="--extra-link" href="https://jakearchibald.github.io/svgomg/" target="_blank">https://jakearchibald.github.io/svgomg/</a> - онлайн-инструмент для работы с svg</li>
-            <li><a class="--extra-link" href="https://github.com/svg/svgo/" target="_blank">https://github.com/svg/svgo/</a> - консольная утилита для svg</li>
+            <li><a class="--extra-link" href="https://imageoptim.com/" target="_blank">ImageOptim</a> - отличный оптимизатор для Mac</li>
+            <li><a class="--extra-link" href="https://squoosh.app/" target="_blank">Squoosh</a> - онлайн-инструмент для растровых изображений</li>
+            <li><a class="--extra-link" href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a> - онлайн-инструмент для работы с svg</li>
+            <li><a class="--extra-link" href="https://github.com/svg/svgo/" target="_blank">SVGO</a> - консольная утилита для svg</li>
         </ul>
     </div>
 </section>
@@ -892,6 +845,23 @@
     </div>
 </section>
 
+<section class="slide" id="svg-clipping">
+    <div>
+        <h2>Обрезка</h2>
+        <pre>
+            <code class="html">&lt;clippath id="clip-star"></code>
+            <code class="html">  &lt;polygon points="98.499..." /></code>
+            <code class="html">&lt;/clippath></code>
+        </pre>
+
+        <pre>
+            <code class="css">clip-path: url(#clip-star);</code>
+        </pre>
+
+        <a class="extra-link" href="http://www.cssplant.com/clip-path-generator" target="_blank">Clip Path Generator</a>
+    </div>
+</section>
+
 <section class="slide" id="css-clipping-example">
     <link rel="stylesheet" href="css/css-clippath-example.css">
     <div>
@@ -966,6 +936,22 @@
 			<code class="css">}</code>
 		</pre>
         <a class="extra-link" href="https://css-tricks.com/webkit-image-wipes/" target="_blank">WebKit Image Wipes </a>
+    </div>
+</section>
+
+
+<section class="slide" id="svg-masking">
+    <div>
+        <h2>Маски</h2>
+        <pre>
+			<code>&lt;mask id="mask"></code>
+			<code>  &lt;image xlink:href="your-image.png" width="200" height="300" /></code>
+			<code>&lt;/mask></code>
+		</pre>
+
+        <pre>
+			<code>mask: url(#mask);</code>
+		</pre>
     </div>
 </section>
 
@@ -1464,7 +1450,7 @@
             <li><i>width</i>, <i>height</i>, <i>border-width</i>, <i>margin</i>, <i>padding</i></li>
             <li><i>font-size</i>, <i>line-height</i>, <i>letter-spacing</i>, <i>word-spacing</i></li>
             <li><i>top</i>, <i>right</i>, <i>bottom</i>, <i>left</i></li>
-            <li><i>opacity, visibility*</i></li>
+            <li><i>opacity</i></li>
         </ul>
     </div>
 </section>
@@ -1475,8 +1461,8 @@
         <ul>
             <li>Просты</li>
             <li>Оптимизированы*</li>
-            <li>Синхронизируются с частотой обновления экрана</li>
-            <li>Неконтролируемые: только запуск и пауза</li>
+            <li>Синхронизированы с частотой обновления экрана</li>
+            <li>Неконтролируемы: только запуск, пауза и разворот</li>
         </ul>
     </div>
 </section>
@@ -1487,7 +1473,7 @@
         <ul>
             <li><i>Paint</i> - дорого (CPU, основной поток)</li>
             <li><i>Compositing</i> - дешево (GPU, поток композитинга)</li>
-            <li><i>Opacity</i>, <i>transform</i>, <i>filter</i> - аппаратно ускоренные анимации</li>
+            <li><i>Opacity</i>, <i>transform</i> - аппаратно ускоренные анимации</li>
         </ul>
         <div class="extra-link">
             <a href="https://csstriggers.com/" target="_blank">CSS triggers</a>,
@@ -1540,14 +1526,14 @@
     </div>
 </section>
 
-<section class="slide rebuild" id="svg-examples">
+<!-- <section class="slide rebuild" id="svg-examples">
     <div>
         <h2>SVG</h2>
         <ul>
             <li><a href="http://yoksel.github.io/about-svg/" target="_blank">Позвольте представить: SVG</a></li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <section class="slide full-image" id="svg-morphing">
     <style>
@@ -2051,6 +2037,8 @@
                     data[i+1] = brightness;	// green
                     data[i+2] = brightness;	// blue
                 }
+
+                console.log(imageData);
 
                 context.putImageData(imageData, x, y);
             }
