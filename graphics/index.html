@@ -304,19 +304,6 @@
     </div>
 </section>
 
-<section class="slide" id="images-formats-tips">
-    <div>
-        <h2>Практические советы</h2>
-        <ul style="max-width: 120ch;">
-            <li>Для любых изображений в универсальных условиях — JPEG</li>
-            <li>Макеты, иконки, логотипы, графика, простые иллюстрации — PNG для растра или SVG для вектора</li>
-            <li>WebP и Avif — как вспомогательные форматы для современных браузеров в целях экономии трафика и ускорения загрузки</li>
-            <li>GIF — только для анимации в редких исключениях</li>
-            <li>Не забывайте про оптимизацию</li>
-        </ul>
-    </div>
-</section>
-
 
 <section class="slide cover fourth" id="images-formats-vector">
     <div>
@@ -348,8 +335,7 @@
             <li>Четкий на ретине</li>
             <li>Можно вставлять тег-svg прямо в HTML</li>
             <li>Переиспользуемые компоненты</li>
-            <li>Доступен как DOM для CSS — существует возможность настраивать стили svg-элементов через CSS</li>
-            <li>...и для JS — можно работать с svg через браузерный скрипт</li>
+            <li>Доступен как DOM для CSS и JS</li>
         </ul>
     </div>
 </section>
@@ -477,6 +463,20 @@
 </section>
 
 
+<section class="slide" id="images-formats-tips">
+    <div>
+        <h2>Практические советы</h2>
+        <ul style="max-width: 120ch;">
+            <li>Для любых изображений в универсальных условиях — JPEG</li>
+            <li>Макеты, иконки, логотипы, графика, простые иллюстрации — PNG для растра или SVG для вектора</li>
+            <li>WebP и Avif — вспомогательные форматы для современных браузеров в целях экономии трафика и ускорения загрузки</li>
+            <li>GIF — только для анимации в редких исключениях</li>
+            <li>Не забывайте про оптимизацию</li>
+        </ul>
+    </div>
+</section>
+
+
 <section class="slide" id="images-integration">
     <div>
         <h2>Встраивание изображений в HTML</h2>
@@ -499,11 +499,11 @@
             <li>Поддерживается всеми браузерами</li>
             <li>Ссылка на изображение вставляется через аттрибут src</li>
             <li>Более современные браузеры поддерживают аттрибут srcset, через который можно указать серию различных версий изображения разных форматов и размеров</li>
-            <li>Поддерживает как растровые форматы, так и векторные (svg) (но без возможности их стилизации)</li>
+            <li>Поддерживает как растровые форматы, так и векторные</li>
         </ul>
 
         <pre class="html" style="margin-top: 80px;">
-            <code>&lt;img src="./image.png" width="640" height="480" id="hero" /&gt;</code>
+            <code>&lt;img src="./image.png" width="640" height="480" /&gt;</code>
         </pre>
     </div>
 </section>
@@ -1473,10 +1473,14 @@
         <ul>
             <li><i>Paint</i> - дорого (CPU, основной поток)</li>
             <li><i>Compositing</i> - дешево (GPU, поток композитинга)</li>
-            <li><i>Opacity</i>, <i>transform</i> - аппаратно ускоренные анимации</li>
+            <li><i>opacity</i>, <i>transform</i>, <i>filter</i> - аппаратно ускоренные анимации</li>
+            <li><i>will-change</i> - подсказка для браузера об анимировании элемента</li>
         </ul>
+        <p style="text-align: center; margin-top: 60px">
+            <img src="pictures/layers.png" width="900" alt="">
+        </p>
         <div class="extra-link">
-            <a href="https://csstriggers.com/" target="_blank">CSS triggers</a>,
+            <a href="https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/" target="_blank">CSS GPU Animation</a>,
             <a href="https://habrahabr.ru/company/yandex/blog/239169/" target="_blank">Аппаратное ускорение в жизни верстальщика</a>
         </div>
     </div>
@@ -1519,9 +1523,9 @@
     <div>
         <h2>SVG Animations</h2>
         <ul>
-            <li><a href="https://animejs.com" target="_blank">Anime.js</a></li>
-            <li><a href="http://d3js.org/" target="_blank">D3.js</a></li>
-            <li><a href="https://greensock.com/" target="_blank">GSAP</a></li>
+            <li><a href="https://animejs.com" target="_blank"><img src="pictures/logos/animejs.svg" height="26" /> – Anime.js</a></li>
+            <li><a href="https://greensock.com/" target="_blank"><img src="pictures/logos/gsap.svg" height="30" style="vertical-align: -5px;" /> – GSAP</a></li>
+            <li><a href="http://d3js.org/" target="_blank"><img src="pictures/logos/d3.svg" height="35" style="vertical-align: middle;" /> – D3.js</a></li>
         </ul>
     </div>
 </section>
@@ -1618,9 +1622,9 @@
     <div>
         <h2>JS анимации: библиотеки</h2>
         <ul>
-            <li><a href="https://animejs.com" target="_blank">Anime.js</a></li>
-            <li><a href="https://greensock.com/" target="_blank">GSAP</a></li>
-            <li><a href="https://lottiefiles.github.io/lottie-docs/" target="_blank">Lottie</a></li>
+            <li><a href="https://animejs.com" target="_blank"><img src="pictures/logos/animejs.svg" height="26" /> – Anime.js</a></li>
+            <li><a href="https://greensock.com/" target="_blank"><img src="pictures/logos/gsap.svg" height="30" style="vertical-align: -5px;" /> – GSAP</a></li>
+            <li><a href="https://lottiefiles.github.io/lottie-docs/" target="_blank"><img src="pictures/logos/lottie.svg" height="40" style="vertical-align: -10px;" /> – Lottie</a></li>
         </ul>
     </div>
 </section>
@@ -2083,9 +2087,15 @@
             <li>отслеживать фигуры и проверять попадания (hit testing)</li>
         </ul>
         <ul>
-            <li><a href="https://www.createjs.com/" target="_blank">CreateJS</a></li>
-            <li><a href="https://konvajs.github.io/" target="_blank">Konva.js</a></li>
-            <li><a href="http://www.pixijs.com/" target="_blank">PixiJS</a></li>
+            <li><a href="https://www.createjs.com/" target="_blank"><img src="pictures/logos/createjs.png" height="40" style="vertical-align: -10px;" /> – CreateJS</a></li>
+            <li><a href="https://konvajs.github.io/" target="_blank">
+                <img
+                    src="pictures/logos/konva.png"
+                    height="40"
+                    style="vertical-align: -10px; margin-left: -5px;"
+                /> – Konva.js</a>
+            </li>
+            <li><a href="http://www.pixijs.com/" target="_blank"><img src="pictures/logos/pixi.svg" height="35" style="vertical-align: -5px;" /> – PixiJS</a></li>
         </ul>
     </div>
 </section>
@@ -2401,11 +2411,11 @@ main();
     <div>
         <h2>Инструменты</h2>
         <ul>
-            <li><a href="https://threejs.org/examples/" target="_blank">THREEJS</a></li>
-            <li><a href="https://babylonjs.com/" target="_blank">Babylon.js</a></li>
-            <li><a href="https://www.blend4web.com/doc/en/about.html" target="_blank">Blend4Web</a></li>
-            <li><a href="https://www.soft8soft.com/" target="_blank">Verge3D</a></li>
-            <li><a href="https://pixijs.com" target="_blank">PixiJS</a></li>
+            <li><a href="https://threejs.org/examples/" target="_blank"><img src="pictures/logos/three.png" height="40" style="vertical-align: -10px;" /> – THREEJS</a></li>
+            <li><a href="https://babylonjs.com/" target="_blank"><img src="pictures/logos/babylon.svg" height="40" style="vertical-align: -10px;" /> – Babylon.js</a></li>
+            <li><a href="https://www.blend4web.com/doc/en/about.html" target="_blank"><img src="pictures/logos/blend4web.png" height="40" style="vertical-align: -10px;" /> – Blend4Web</a></li>
+            <li><a href="https://www.soft8soft.com/" target="_blank"><img src="pictures/logos/verge3d.png" height="40" style="vertical-align: -10px;" /> – Verge3D</a></li>
+            <li><a href="http://www.pixijs.com/" target="_blank"><img src="pictures/logos/pixi.svg" height="35" style="vertical-align: -5px;" /> – PixiJS</a></li>
         </ul>
     </div>
 </section>
