@@ -150,49 +150,50 @@
     <div>
         <h2>JPEG</h2>
         <ul style="max-width: 120ch;">
-            <li>Наиболее популярный формат изображений</li>
-            <li>По умолчанию является форматом со сжатием с потерями</li>
-            <li>Универсальная поддержка большим количеством браузеров</li>
-            <li>Отлично подходит для хранения любых изображений, если нет необходимости сохранить их исходное качество</li>
+            <li>Наиболее популярный формат</li>
+            <li>Сжимается с потерями</li>
+            <li>Универсальная поддержка даже старыми браузерами</li>
+            <li>Подходит для любых изображений, если не нужно сохранить их исходное качество</li>
         </ul>
-        <p style="text-align: center; margin-top: 60px">
+        <ul style="max-width: 120ch; color: #CC2929;">
+            <li>Не гарантирует сохранность данных</li>
+            <li>Не поддерживает анимацию</li>
+            <li>Не поддерживает прозрачность</li>
+        </ul>
+        <p style="text-align: center; margin-top: 0px;">
             <img src="pictures/01-images/jpegs-2.png" width="1280" alt="">
         </p>
     </div>
 </section>
 
-<section class="slide" id="images-formats-jpeg-cons">
-    <div>
-        <h2>JPEG — Недостатки</h2>
-        <ul style="max-width: 80ch;">
-            <li>Не гарантирует сохранность данных</li>
-            <li>Не поддерживает анимацию</li>
-            <li>Не поддерживает прозрачность</li>
-            <li>Существуют более современные и эффективные форматы</li>
-        </ul>
-    </div>
-</section>
-
 
 <section class="slide" id="images-formats-png">
+    <style>
+        #images-formats-png {
+            position: relative;
+        }
+
+        #images-formats-png img {
+            position: absolute;
+
+            top: 400px;
+            right: 40px;
+        }
+    </style>
     <div>
         <h2>PNG</h2>
-        <ul style="max-width: 120ch;">
-            <li>Популярный формат для передачи изображения без потерь</li>
-            <li>Поддерживается всеми браузерами, в том числе сильно устаревшими</li>
+        <ul style="max-width: 100ch;">
+            <li>Популярный формат для передачи изображения без потерь</li>
+            <li>Универсальная поддержка даже старыми браузерами</li>
             <li>Имеет эффективные методы сжатия простой графики</li>
             <li>Поддерживает прозрачность</li>
         </ul>
-    </div>
-</section>
-
-<section class="slide" id="images-formats-png-cons">
-    <div>
-        <h2>PNG — Недостатки</h2>
-        <ul style="max-width: 120ch;">
-            <li>Слишком тяжелый для хранения в нем изображений с большим количеством уникальных цветов</li>
+        <ul style="max-width: 100ch; color: #CC2929;">
+            <li>Слишком тяжелый для хранения сложных изображений</li>
             <li>Не умеет в анимацию (но существует APNG)</li>
         </ul>
+
+        <img src="pictures/01-images/pngs.jpg" width="900" alt="">
     </div>
 </section>
 
@@ -206,47 +207,16 @@
             <li>Имеет современные методы сжатия, поэтому очень хорошо сжимается и мало весит</li>
             <li>Умеет в сжатие как с потерями, так и без потерь</li>
         </ul>
-
-    </div>
-</section>
-
-<section class="slide" id="images-formats-webp-cons">
-    <div>
-        <h2>WebP — Недостатки</h2>
-        <ul style="max-width: 80ch;">
-            <li>Требует хранения рядом альтернативных форматов, тк пока не везде поддерживается</li>
+        <ul style="max-width: 120ch; color: #CC2929;">
+            <li>Требует хранения рядом альтернативных форматов, т.к. пока не везде поддерживается</li>
             <li>До сих пор не все графические редакторы умеют сохранять файлы в WebP</li>
         </ul>
     </div>
 </section>
 
+
 <section class="slide full-image" id="images-formats-webp-supports">
     <img src="pictures/caniuse/webp.png" alt="">
-</section>
-
-
-<section class="slide" id="images-formats-heif">
-    <div>
-        <h2>HEIF</h2>
-        <ul style="max-width: 120ch;">
-            <li>Современный формат файлов для хранения отдельных изображений или их последовательностей (медиаконтейнер). Разработан MPEG</li>
-            <li>Используется по умолчанию в современных iOS как формат для съемки фотографий</li>
-        </ul>
-    </div>
-</section>
-
-<section class="slide" id="images-formats-heif-support">
-    <div>
-        <h2>HEIF — Поддержка</h2>
-        <ul style="max-width: 120ch;">
-            <li>Крайне плохая браузерная поддержка</li>
-            <li>О формате стоит знать для понимания почему фотографии, сделанные на iPhone, нельзя показать в браузере без конвертации</li>
-        </ul>
-    </div>
-</section>
-
-<section class="slide full-image" id="images-formats-heif-supports">
-    <img src="pictures/caniuse/heif.png" alt="">
 </section>
 
 
@@ -260,13 +230,7 @@
             <li>Неплохо поддерживается современными браузерами</li>
             <li>Поддерживает анимированные изображения</li>
         </ul>
-    </div>
-</section>
-
-<section class="slide" id="images-formats-avif-cons">
-    <div>
-        <h2>AVIF — Недостатки</h2>
-        <ul style="max-width: 120ch;">
+        <ul style="max-width: 120ch; color: #CC2929;">
             <li>Возникают проблемы с цветопередачей мелких деталей</li>
             <li>Также, как и WebP, требует хранения рядом альтернативных форматов</li>
             <li>Не все графические редакторы умеют сохранять файлы в Avif</li>
@@ -274,33 +238,62 @@
     </div>
 </section>
 
+
 <section class="slide full-image" id="images-formats-avif-supports">
     <img src="pictures/caniuse/avif.png" alt="">
 </section>
 
 
-<section class="slide" id="images-formats-gif">
+
+<section class="slide" id="images-formats-heif">
     <div>
-        <h2>GIF (гифки)</h2>
-        <ul style="max-width: 80ch;">
-            <li>Устаревший, но всё еще популярный формат для анимированных изображений</li>
-            <li>Простой способ передать анимацию</li>
-            <li>Каждый кадр анимации хранит в себе как отдельное изображение</li>
-            <li>Миллионы веселых картинок и анимаций, которые так популярны в месенджерах</li>
+        <h2>HEIF</h2>
+        <ul style="max-width: 120ch;">
+            <li>Современный формат файлов для хранения отдельных изображений или их последовательностей (медиаконтейнер). Разработан MPEG</li>
+            <li>Используется по умолчанию в современных iOS как формат для съемки фотографий</li>
+        </ul>
+        <ul style="max-width: 120ch; color: #CC2929;">
+            <li>Крайне плохая браузерная поддержка</li>
+            <li>О формате стоит знать для понимания почему фотографии, сделанные на iPhone, нельзя показать в браузере без конвертации</li>
         </ul>
     </div>
 </section>
 
 
-<section class="slide" id="images-formats-gif-cons">
+<section class="slide full-image" id="images-formats-heif-supports">
+    <img src="pictures/caniuse/heif.png" alt="">
+</section>
+
+
+<section class="slide" id="images-formats-gif">
+    <style>
+        #images-formats-gif {
+            position: relative;
+        }
+
+        #images-formats-gif img {
+            position: absolute;
+
+            top: 160px;
+            right: 40px;
+        }
+    </style>
     <div>
-        <h2>GIF — Недостатки</h2>
+        <h2>GIF (гифки)</h2>
         <ul style="max-width: 120ch;">
+            <li>Устаревший, но всё еще популярный формат для анимированных изображений</li>
+            <li>Простой способ передать анимацию</li>
+            <li>Каждый кадр анимации хранит в себе как отдельное изображение</li>
+            <li>Миллионы веселых картинок и анимаций, которые так популярны в месенджерах</li>
+        </ul>
+        <ul style="max-width: 120ch; color: #CC2929;">
             <li>Очень тяжелый (гиф-анимация может весить 8 Мб против 800 Кб аналогичного видеофайла)</li>
             <li>Отсутствие контроля анимации</li>
             <li>Скудные по современным меркам возможности цветопередачи (256 уникальных цветов на файл)</li>
             <li>Плохое качество изображений</li>
         </ul>
+
+        <img src="pictures/01-images/magical-magic.gif" width="548" alt="">
     </div>
 </section>
 
